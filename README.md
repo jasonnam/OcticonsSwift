@@ -1,7 +1,9 @@
 # OcticonsSwift
 [![License](https://img.shields.io/cocoapods/l/Navajo-Swift.svg?style=flat)](https://opensource.org/licenses/MIT)
 [![Swift 2.0](https://img.shields.io/badge/Swift-2.0-orange.svg?style=flat)](https://developer.apple.com/swift)
+[![Platform](https://img.shields.io/cocoapods/p/OcticonsSwift.svg?style=flat)](https://cocoapods.org/pods/OcticonsSwift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/cocoapods/v/OcticonsSwift.svg?style=flat)](https://cocoapods.org/pods/OcticonsSwift)
 
 **[Octicons](https://octicons.github.com) Swift wrapper.**
 
@@ -52,6 +54,13 @@ imageView.image = UIImage.octiconsImageFor(.Rocket,
 github "jasonnam/OcticonsSwift"
 ```
 
+### CocoaPods
+
+```ruby
+use_frameworks!
+pod 'OcticonsSwift'
+```
+
 ```swift
 import OcticonsSwift
 ```
@@ -64,7 +73,7 @@ Just copy the files in Source folder into your project. (Check your platform)
 
 Check this [instructions](https://medium.com/@jasonnam/importing-font-files-to-xcode-projects-even-from-framework-9da99ba27c70#.v5f0d3cln).
 
-> If you install OcticonsSwift with Carthage check the number 4 of the article.
+> If you install OcticonsSwift with Carthage or CocoaPods check the number 4 of the article.
 
 ## Contact
 
