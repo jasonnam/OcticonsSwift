@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECD5E0971CBB96BD00D4A07A /* OcticonsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD5E0961CBB96B200D4A07A /* OcticonsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD5E0981CBB96C000D4A07A /* OcticonsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD5E0961CBB96B200D4A07A /* OcticonsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD5E0991CBB96C300D4A07A /* OcticonsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD5E0961CBB96B200D4A07A /* OcticonsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECD5E09A1CBB96C600D4A07A /* OcticonsSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD5E0961CBB96B200D4A07A /* OcticonsSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECF6B40B1C3FFD5C00F22D42 /* UIFont+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6B40A1C3FFD5C00F22D42 /* UIFont+Octicons.swift */; };
 		ECF6B41B1C40016200F22D42 /* NSFont+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6B40C1C40009000F22D42 /* NSFont+Octicons.swift */; };
 		ECF6B43E1C400B7300F22D42 /* UIFont+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF6B40A1C3FFD5C00F22D42 /* UIFont+Octicons.swift */; };
@@ -26,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECD5E0961CBB96B200D4A07A /* OcticonsSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OcticonsSwift.h; path = Source/OcticonsSwift.h; sourceTree = "<group>"; };
 		ECF6B3FE1C3FFB4100F22D42 /* OcticonsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OcticonsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF6B40A1C3FFD5C00F22D42 /* UIFont+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+Octicons.swift"; path = "Source/UIFont+Octicons.swift"; sourceTree = "<group>"; };
 		ECF6B40C1C40009000F22D42 /* NSFont+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSFont+Octicons.swift"; path = "Source/NSFont+Octicons.swift"; sourceTree = "<group>"; };
@@ -74,6 +79,7 @@
 		ECF6B3F41C3FFB4100F22D42 = {
 			isa = PBXGroup;
 			children = (
+				ECD5E0961CBB96B200D4A07A /* OcticonsSwift.h */,
 				ECF6B4401C400BDA00F22D42 /* String+Octicons.swift */,
 				ECF6B40A1C3FFD5C00F22D42 /* UIFont+Octicons.swift */,
 				ECF6B40C1C40009000F22D42 /* NSFont+Octicons.swift */,
@@ -103,6 +109,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD5E0971CBB96BD00D4A07A /* OcticonsSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +117,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD5E0981CBB96C000D4A07A /* OcticonsSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +125,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD5E0991CBB96C300D4A07A /* OcticonsSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +133,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD5E09A1CBB96C600D4A07A /* OcticonsSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
