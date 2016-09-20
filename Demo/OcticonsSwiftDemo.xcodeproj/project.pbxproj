@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC4780551D90F9D1002BEC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4780541D90F9D1002BEC8A /* AppDelegate.swift */; };
+		EC4780571D90F9D1002BEC8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4780561D90F9D1002BEC8A /* ViewController.swift */; };
+		EC47805A1D90F9D1002BEC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4780581D90F9D1002BEC8A /* Main.storyboard */; };
+		EC47805C1D90F9D2002BEC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC47805B1D90F9D2002BEC8A /* Assets.xcassets */; };
+		EC47805F1D90F9D2002BEC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC47805D1D90F9D2002BEC8A /* LaunchScreen.storyboard */; };
+		EC47806A1D90FB1F002BEC8A /* String+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4780671D90FB1F002BEC8A /* String+Octicons.swift */; };
+		EC47806B1D90FB1F002BEC8A /* UIFont+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4780681D90FB1F002BEC8A /* UIFont+Octicons.swift */; };
+		EC47806C1D90FB1F002BEC8A /* UIImage+Octicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4780691D90FB1F002BEC8A /* UIImage+Octicons.swift */; };
+		EC47806E1D90FB2F002BEC8A /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC47806D1D90FB2F002BEC8A /* octicons.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC4780511D90F9D1002BEC8A /* OcticonsSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OcticonsSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4780541D90F9D1002BEC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC4780561D90F9D1002BEC8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC4780591D90F9D1002BEC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC47805B1D90F9D2002BEC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC47805E1D90F9D2002BEC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC4780601D90F9D2002BEC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4780671D90FB1F002BEC8A /* String+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Octicons.swift"; path = "../../Source/String+Octicons.swift"; sourceTree = "<group>"; };
+		EC4780681D90FB1F002BEC8A /* UIFont+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+Octicons.swift"; path = "../../Source/UIFont+Octicons.swift"; sourceTree = "<group>"; };
+		EC4780691D90FB1F002BEC8A /* UIImage+Octicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Octicons.swift"; path = "../../Source/UIImage+Octicons.swift"; sourceTree = "<group>"; };
+		EC47806D1D90FB2F002BEC8A /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = octicons.ttf; path = ../../octicons.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC47804E1D90F9D1002BEC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC4780481D90F9D1002BEC8A = {
+			isa = PBXGroup;
+			children = (
+				EC4780531D90F9D1002BEC8A /* OcticonsSwiftDemo */,
+				EC4780661D90FAE4002BEC8A /* OcticonsSwift */,
+				EC4780521D90F9D1002BEC8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC4780521D90F9D1002BEC8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4780511D90F9D1002BEC8A /* OcticonsSwiftDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC4780531D90F9D1002BEC8A /* OcticonsSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC4780541D90F9D1002BEC8A /* AppDelegate.swift */,
+				EC47805D1D90F9D2002BEC8A /* LaunchScreen.storyboard */,
+				EC4780581D90F9D1002BEC8A /* Main.storyboard */,
+				EC4780561D90F9D1002BEC8A /* ViewController.swift */,
+				EC47805B1D90F9D2002BEC8A /* Assets.xcassets */,
+				EC4780601D90F9D2002BEC8A /* Info.plist */,
+			);
+			path = OcticonsSwiftDemo;
+			sourceTree = "<group>";
+		};
+		EC4780661D90FAE4002BEC8A /* OcticonsSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EC4780671D90FB1F002BEC8A /* String+Octicons.swift */,
+				EC4780681D90FB1F002BEC8A /* UIFont+Octicons.swift */,
+				EC4780691D90FB1F002BEC8A /* UIImage+Octicons.swift */,
+				EC47806D1D90FB2F002BEC8A /* octicons.ttf */,
+			);
+			name = OcticonsSwift;
+			path = OcticonsSwiftDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4780501D90F9D1002BEC8A /* OcticonsSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4780631D90F9D2002BEC8A /* Build configuration list for PBXNativeTarget "OcticonsSwiftDemo" */;
+			buildPhases = (
+				EC47804D1D90F9D1002BEC8A /* Sources */,
+				EC47804E1D90F9D1002BEC8A /* Frameworks */,
+				EC47804F1D90F9D1002BEC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OcticonsSwiftDemo;
+			productName = OcticonsSwiftDemo;
+			productReference = EC4780511D90F9D1002BEC8A /* OcticonsSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC4780491D90F9D1002BEC8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jason Nam";
+				TargetAttributes = {
+					EC4780501D90F9D1002BEC8A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EC47804C1D90F9D1002BEC8A /* Build configuration list for PBXProject "OcticonsSwiftDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC4780481D90F9D1002BEC8A;
+			productRefGroup = EC4780521D90F9D1002BEC8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC4780501D90F9D1002BEC8A /* OcticonsSwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC47804F1D90F9D1002BEC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC47805F1D90F9D2002BEC8A /* LaunchScreen.storyboard in Resources */,
+				EC47805C1D90F9D2002BEC8A /* Assets.xcassets in Resources */,
+				EC47806E1D90FB2F002BEC8A /* octicons.ttf in Resources */,
+				EC47805A1D90F9D1002BEC8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC47804D1D90F9D1002BEC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4780571D90F9D1002BEC8A /* ViewController.swift in Sources */,
+				EC47806C1D90FB1F002BEC8A /* UIImage+Octicons.swift in Sources */,
+				EC4780551D90F9D1002BEC8A /* AppDelegate.swift in Sources */,
+				EC47806B1D90FB1F002BEC8A /* UIFont+Octicons.swift in Sources */,
+				EC47806A1D90FB1F002BEC8A /* String+Octicons.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC4780581D90F9D1002BEC8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4780591D90F9D1002BEC8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC47805D1D90F9D2002BEC8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC47805E1D90F9D2002BEC8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC4780611D90F9D2002BEC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC4780621D90F9D2002BEC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC4780641D90F9D2002BEC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OcticonsSwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonnam.OcticonsSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC4780651D90F9D2002BEC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OcticonsSwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonnam.OcticonsSwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC47804C1D90F9D1002BEC8A /* Build configuration list for PBXProject "OcticonsSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4780611D90F9D2002BEC8A /* Debug */,
+				EC4780621D90F9D2002BEC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4780631D90F9D2002BEC8A /* Build configuration list for PBXNativeTarget "OcticonsSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4780641D90F9D2002BEC8A /* Debug */,
+				EC4780651D90F9D2002BEC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC4780491D90F9D1002BEC8A /* Project object */;
+}
