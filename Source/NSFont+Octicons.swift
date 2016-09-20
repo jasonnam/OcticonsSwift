@@ -27,7 +27,7 @@ import AppKit
 
 public extension NSFont {
     /// Octicons font for specific size
-    public class func octiconsFontOfSize(fontSize: CGFloat) -> NSFont? {
-        return NSFont(name: String.kOcticonsFontFileName, size: fontSize)
+    public class func octiconsFont(size: CGFloat) -> NSFont? {
+        return NSFont(name: String.kOcticonsFontFileName, size: size)
     }
 }

@@ -30,26 +30,26 @@
 import AppKit
 
 public extension NSImage {
-    public static func octiconsImageFor(octiconsID: OcticonsID, iconColor: NSColor, size: CGSize) -> NSImage {
-        return octiconsImageFor(octiconsID, backgroundColor: NSColor.clearColor(), iconColor: iconColor, iconScale: 1.0, size: size)
+    public static func octiconsImage(octiconsID: OcticonsID, iconColor: NSColor, size: CGSize) -> NSImage {
+        return octiconsImage(octiconsID: octiconsID, backgroundColor: NSColor.clear, iconColor: iconColor, iconScale: 1.0, size: size)
     }
 
-    public static func octiconsImageFor(octiconsID: OcticonsID, backgroundColor: NSColor, iconColor: NSColor, iconScale: CGFloat, size: CGSize) -> NSImage {
+    public static func octiconsImage(octiconsID: OcticonsID, backgroundColor: NSColor, iconColor: NSColor, iconScale: CGFloat, size: CGSize) -> NSImage {
         let image = NSImage(size: size)
         image.lockFocus()
 
         // Abstracted Attributes
-        let textContent = String.characterForOcticonsID(octiconsID)
+        let textContent = String.character(for: octiconsID)
 
         // Text Drawing
         let fontSize = min(size.height, size.width)*iconScale
-        let textRect = CGRectMake(size.width/2-(fontSize/2)*1.2, size.height/2-fontSize/2, fontSize*1.2, fontSize)
+        let textRect = CGRect(x: size.width/2-(fontSize/2)*1.2, y: size.height/2-fontSize/2, width: fontSize*1.2, height: fontSize)
         let font = NSFont(name: String.kOcticonsFontFileName, size: fontSize)!
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .Center
-        paragraphStyle.lineBreakMode = .ByWordWrapping
+        paragraphStyle.alignment = .center
+        paragraphStyle.lineBreakMode = .byWordWrapping
 
-        textContent.drawInRect(textRect, withAttributes: [
+        textContent.draw(in: textRect, withAttributes: [
             NSFontAttributeName : font,
             NSParagraphStyleAttributeName: paragraphStyle,
             NSForegroundColorAttributeName: iconColor

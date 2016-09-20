@@ -27,7 +27,7 @@ import UIKit
 
 public extension UIFont {
     /// Octicons font for specific size
-    public class func octiconsFontOfSize(fontSize: CGFloat) -> UIFont? {
-        return UIFont(name: String.kOcticonsFontFileName, size: fontSize)
+    public class func octiconsFont(size: CGFloat) -> UIFont? {
+        return UIFont(name: String.kOcticonsFontFileName, size: size)
     }
 }

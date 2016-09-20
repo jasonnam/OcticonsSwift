@@ -30,27 +30,27 @@
 import UIKit
 
 public extension UIImage {
-    public static func octiconsImageFor(octiconsID: OcticonsID, iconColor: UIColor, size: CGSize) -> UIImage {
-        return octiconsImageFor(octiconsID, backgroundColor: UIColor.clearColor(), iconColor: iconColor, iconScale: 1.0, size: size)
+    public static func octiconsImage(octiconsID: OcticonsID, iconColor: UIColor, size: CGSize) -> UIImage {
+        return octiconsImage(octiconsID: octiconsID, backgroundColor: UIColor.clear, iconColor: iconColor, iconScale: 1.0, size: size)
     }
 
-    public static func octiconsImageFor(octiconsID: OcticonsID, backgroundColor: UIColor, iconColor: UIColor, iconScale: CGFloat, size: CGSize) -> UIImage {
+    public static func octiconsImage(octiconsID: OcticonsID, backgroundColor: UIColor, iconColor: UIColor, iconScale: CGFloat, size: CGSize) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
 
         // Abstracted Attributes
-        let textContent = String.characterForOcticonsID(octiconsID)
+        let textContent = String.character(for: octiconsID)
         backgroundColor.setFill()
-        CGContextFillRect(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, size.width, size.height))
+        UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
 
         // Text Drawing
         let fontSize = min(size.height, size.width)*iconScale
-        let textRect = CGRectMake(size.width/2-(fontSize/2)*1.2, size.height/2-fontSize/2, fontSize*1.2, fontSize)
+        let textRect = CGRect(x: size.width/2-(fontSize/2)*1.2, y: size.height/2-fontSize/2, width: fontSize*1.2, height: fontSize)
         let font = UIFont(name: String.kOcticonsFontFileName, size: fontSize)!
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .Center
-        paragraphStyle.lineBreakMode = .ByWordWrapping
+        paragraphStyle.alignment = .center
+        paragraphStyle.lineBreakMode = .byWordWrapping
 
-        textContent.drawInRect(textRect, withAttributes: [
+        textContent.draw(in: textRect, withAttributes: [
             NSFontAttributeName : font,
             NSParagraphStyleAttributeName: paragraphStyle,
             NSForegroundColorAttributeName: iconColor
@@ -59,6 +59,6 @@ public extension UIImage {
         // Image returns
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return image
+        return image!
     }
 }
