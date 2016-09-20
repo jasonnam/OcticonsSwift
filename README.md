@@ -1,7 +1,6 @@
 # OcticonsSwift
-[![License](https://img.shields.io/cocoapods/l/Navajo-Swift.svg?style=flat)](https://opensource.org/licenses/MIT)
-[![Swift 2.0](https://img.shields.io/badge/Swift-2.0-orange.svg?style=flat)](https://developer.apple.com/swift)
 [![Platform](https://img.shields.io/cocoapods/p/OcticonsSwift.svg?style=flat)](https://cocoapods.org/pods/OcticonsSwift)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/OcticonsSwift.svg?style=flat)](https://cocoapods.org/pods/OcticonsSwift)
 
@@ -15,37 +14,37 @@ This project uses Octicons version 3.5.0, not the latest. Please refer this [iss
 
 ### Font
 ```swift
-let octiconsFont = UIFont.octiconsFontOfSize(18)
+let octiconsFont = UIFont.octiconsFont(size: 18)
 let octiconsFont = UIFont(name: "Octicons", size: 18)
 ```
 
 ### String
 ```swift
-let repoString = String.characterForOcticonsID(.Repo)
+let repoString = String.character(for: .repo)
 ```
 
 ### UIImage / NSImage
 ```swift
-let repoImage = UIImage.octiconsImageFor(.Repo,
-                    iconColor: UIColor.blackColor(),
-                    size: CGSize(width: 30, height: 30))
+let repoImage = UIImage(octiconsID: .repo,
+                        iconColor : UIColor.black,
+                        size      : CGSize(width: 30, height: 30))
 ```
 
 ## Example
 
 ### UILabel
 ```swift
-label.font = UIFont.octiconsFontOfSize(18)
-label.text = String.characterForOcticonsID(.Repo)
+label.font = UIFont.octiconsFont(size: 18)
+label.text = String.character(for: .repo)
 ```
 
 ### UIImageView
 ```swift
-imageView.image = UIImage.octiconsImageFor(.Rocket,
-                    backgroundColor: UIColor.grayColor(),
-                    iconColor: UIColor.blackColor(),
-                    iconScale: 0.8,
-                    size: CGSize(width: 30, height: 30))
+imageView.image = UIImage(octiconsID     : .rocket,
+                          backgroundColor: UIColor.gray,
+                          iconColor      : UIColor.black,
+                          iconScale      : 0.8,
+                          size           : CGSize(width: 30, height: 30))
 ```
 
 ## Installation
