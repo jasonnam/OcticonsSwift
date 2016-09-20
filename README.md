@@ -9,6 +9,8 @@
 
 > This project is based on [OcticonsIOS](https://github.com/jacksonh/OcticonsIOS).
 
+This project uses Octicons version 3.5.0, not the latest. Please refer this [issue](https://github.com/primer/octicons/issues/108).
+
 ## Usage
 
 ### Font

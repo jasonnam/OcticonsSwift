@@ -69,7 +69,6 @@ public extension String {
         "\u{f00b}",
         "\u{f00c}",
         "\u{f05f}",
-        "\u{f065}",
         "\u{f02b}",
         "\u{f04f}",
         "\u{f045}",
@@ -178,6 +177,7 @@ public extension String {
         "\u{f0e1}",
         "\u{f036}",
         "\u{f032}",
+        "\u{f0e7}",
         "\u{f0b2}",
         "\u{f02a}",
         "\u{f08f}",
@@ -199,9 +199,12 @@ public extension String {
         "\u{f039}",
         "\u{f0ba}",
         "\u{f064}",
+        "\u{f0e6}",
+        "\u{f0e8}",
         "\u{f0e0}",
         "\u{f081}",
-        "\u{26A1}"]
+        "\u{26A1}"
+    ]
 }
 
 /// Octicons characters identifier
@@ -238,7 +241,6 @@ public enum OcticonsID: Int {
     case cloudDownload
     case cloudUpload
     case code
-    case colorMode
     case comment
     case commentDiscussion
     case creditCard
@@ -347,6 +349,7 @@ public enum OcticonsID: Int {
     case shield
     case signIn
     case signOut
+    case smiley
     case squirrel
     case star
     case stop
@@ -368,6 +371,8 @@ public enum OcticonsID: Int {
     case unfold
     case unmute
     case versions
+    case verified
+    case unverified
     case watch
     case x
     case zap
