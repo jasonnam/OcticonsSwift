@@ -30,11 +30,11 @@
 import AppKit
 
 public extension NSImage {
-    public static func octiconsImage(octiconsID: OcticonsID, iconColor: NSColor, size: CGSize) -> NSImage {
-        return octiconsImage(octiconsID: octiconsID, backgroundColor: NSColor.clear, iconColor: iconColor, iconScale: 1.0, size: size)
+    public convenience init?(octiconsID: OcticonsID, iconColor: NSColor, size: CGSize) {
+        self.init(octiconsID: octiconsID, backgroundColor: NSColor.clear, iconColor: iconColor, iconScale: 1.0, size: size)
     }
 
-    public static func octiconsImage(octiconsID: OcticonsID, backgroundColor: NSColor, iconColor: NSColor, iconScale: CGFloat, size: CGSize) -> NSImage {
+    public convenience init?(octiconsID: OcticonsID, backgroundColor: NSColor, iconColor: NSColor, iconScale: CGFloat, size: CGSize) {
         let image = NSImage(size: size)
         image.lockFocus()
 
@@ -42,21 +42,25 @@ public extension NSImage {
         let textContent = String.character(for: octiconsID)
 
         // Text Drawing
-        let fontSize = min(size.height, size.width)*iconScale
-        let textRect = CGRect(x: size.width/2-(fontSize/2)*1.2, y: size.height/2-fontSize/2, width: fontSize*1.2, height: fontSize)
-        let font = NSFont(name: String.kOcticonsFontFileName, size: fontSize)!
+        let fontSize = min(size.height, size.width) * iconScale
+        let textRect = CGRect(x: size.width / 2 - (fontSize / 2) * 1.2, y: size.height / 2 - fontSize / 2, width: fontSize * 1.2, height: fontSize)
+
+        guard let font = NSFont(name: String.kOcticonsFontFileName, size: fontSize) else {
+            return nil
+        }
+
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
         paragraphStyle.lineBreakMode = .byWordWrapping
 
-        textContent.draw(in: textRect, withAttributes: [
-            NSFontAttributeName : font,
-            NSParagraphStyleAttributeName: paragraphStyle,
-            NSForegroundColorAttributeName: iconColor
-            ])
+        textContent.draw(in: textRect, withAttributes: [NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraphStyle, NSForegroundColorAttributeName: iconColor])
 
-        // Image returns
         image.unlockFocus()
-        return image
+
+        if let data = image.tiffRepresentation {
+            self.init(data: data)
+        } else {
+            return nil
+        }
     }
 }
