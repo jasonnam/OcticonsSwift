@@ -59,8 +59,8 @@ public extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        if let cgImage = image?.cgImage {
-            self.init(cgImage: cgImage)
+        if let image = image, let imageData = UIImagePNGRepresentation(image) {
+            self.init(data: imageData, scale: 2)
         } else {
             return nil
         }
