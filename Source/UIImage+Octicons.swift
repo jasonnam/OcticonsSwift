@@ -60,7 +60,7 @@ public extension UIImage {
         UIGraphicsEndImageContext()
 
         if let image = image, let imageData = UIImagePNGRepresentation(image) {
-            self.init(data: imageData, scale: 2)
+            self.init(data: imageData, scale: UIScreen.main.scale)
         } else {
             return nil
         }
