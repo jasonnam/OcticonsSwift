@@ -27,14 +27,36 @@
 // https://github.com/jacksonh/OcticonsIOS
 //
 
+#if os(watchOS)
+import WatchKit
+#else
 import UIKit
+#endif
 
 public extension UIImage {
     public convenience init?(octiconsID: OcticonsID, iconColor: UIColor, size: CGSize) {
         self.init(octiconsID: octiconsID, backgroundColor: UIColor.clear, iconColor: iconColor, iconScale: 1.0, size: size)
     }
 
+    #if os(watchOS)
     public convenience init?(octiconsID: OcticonsID, backgroundColor: UIColor, iconColor: UIColor, iconScale: CGFloat, size: CGSize) {
+        if let image = UIImage.makeImage(octiconsID: octiconsID, backgroundColor: backgroundColor, iconColor: iconColor, iconScale: iconScale, size: size), let imageData = UIImagePNGRepresentation(image) {
+            self.init(data: imageData, scale: WKInterfaceDevice.current().screenScale)
+        } else {
+            return nil
+        }
+    }
+    #else
+    public convenience init?(octiconsID: OcticonsID, backgroundColor: UIColor, iconColor: UIColor, iconScale: CGFloat, size: CGSize) {
+        if let image = UIImage.makeImage(octiconsID: octiconsID, backgroundColor: backgroundColor, iconColor: iconColor, iconScale: iconScale, size: size), let imageData = UIImagePNGRepresentation(image) {
+            self.init(data: imageData, scale: UIScreen.main.scale)
+        } else {
+            return nil
+        }
+    }
+    #endif
+
+    private static func makeImage(octiconsID: OcticonsID, backgroundColor: UIColor, iconColor: UIColor, iconScale: CGFloat, size: CGSize) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
 
         // Abstracted Attributes
@@ -59,10 +81,6 @@ public extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        if let image = image, let imageData = UIImagePNGRepresentation(image) {
-            self.init(data: imageData, scale: UIScreen.main.scale)
-        } else {
-            return nil
-        }
+        return image
     }
 }
