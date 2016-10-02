@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "OcticonsSwift"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Octicons Swift wrapper"
 
   s.description      = <<-DESC
@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.source                = { :git    => "https://github.com/jasonnam/OcticonsSwift.git",
-                              :commit => "df7467d7e1222ba2c6e5a0590aa757c878632201",
-                              :tag    => "0.1.1" }
+                              :commit => "7394055abca403b071db40013477889d74ef90ab",
+                              :tag    => "0.1.2" }
 
   s.ios.source_files = ["Source/UIImage+Octicons.swift", "Source/String+Octicons.swift", "Source/UIFont+Octicons.swift"]
   s.osx.source_files = ["Source/NSImage+Octicons.swift", "Source/String+Octicons.swift", "Source/NSFont+Octicons.swift"]
